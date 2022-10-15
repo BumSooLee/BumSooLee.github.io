@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+/* reset */
+html {-webkit-text-size-adjust: none; text-size-adjust: none;}
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700;}
+a {color: inherit; text-decoration: inherit;}
+li {list-style: none;}
+img {vertical-align: middle; max-width: 100%;}
+address, em, i, cite {font-style: normal;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0;}
+i[class^="fa"] {position: relative; display: inline-block; vertical-align: middle;}
+i[class^="fa"] span {position: absolute; left: -9999px;}
+.ir-hidden {position: absolute; left: -9999px;}
+.mobile {display: none !important;}
+br.only-m {content: '';}
+br.only-m::after {content: '\00a0';}
+* {margin: 0; padding: 0;}
+
+
+
+
+
+#wrapper { margin: 0 auto; overflow: hidden;}
+#skip-nav {position: fixed; left: 0; top: -41px; width: 100%; text-align: center; line-height: 40px; background-color: rgba(0, 0, 0, 0.6); color: #ffffff; font-size: 16px; border-bottom: 1px solid rgba(255, 255, 255, 0.8); transition: top 0.3s; z-index: 100000;}
+#skip-nav:focus {top: 0;}
+
+
+#header.active {
+  color: #000;
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+
+/* header */
+#header {position: fixed; width: 100%; top: 0; height: 90px; z-index: 10000; background-color: transparent; transition: all .5s;}
+#header h1 {position: absolute; top: 25px; left: 50%; margin-left: -100px; height: 34px; width: 200px; color: #fff;}
+#header h1 a {font-size: 1.2em; color: #fff;}
+#header h1 > a > svg g path {color: #fff; transition:  .3s ease-out;}
+#header {color: #fff; } 
+#header > nav.gnb {transition:  .3s ease-out;}
+#header > nav.gnb > ul.gnb-left {position: absolute; top: 40px; transform: translate(0, -50%); margin: 10px 70px;}
+#header nav.gnb > ul.gnb-left li {display: inline; padding-right: 15px; background-color: transparent; font-size: 13.5px;}
+#header nav.gnb > ul.gnb-left li > a {padding-right: 9px; font-weight: 350;}
+
+#header nav.gnb ul.gnb-right {position: absolute; top: 50px; transform: translate(0, -30%); right: 0;margin-right: 60px; }
+#header nav.gnb ul.gnb-right li {position: relative; float: right; margin-left: 15px; background-color: transparent; text-align: center; font-size: 13.5px;}
+#header nav.gnb select.Shop {top: 0; border:0; box-sizing: border-box; background:transparent; color: inherit; top: auto; -webkit-appearance: none; -moz-appearance: none; appearance: none;
+transform: translate(0, -20%); outline: none;}
+
+
+
+
+
+/* main page */
+#main section.main-visual1 {height: 100vh; width: 100vw; position: relative;  background: url(../img/main2.jpg) center center no-repeat; background-size: cover; object-fit: cover;}
+#main section.main-visual1 > div.title {position: absolute; bottom: 35px; margin: 0; padding: 0; text-align: center; left: 50%; transform: translate(-50%, 0); width: auto; height: auto;  will-change: opacity, z-index, top; opacity: 1; z-index: 9; transition: opacity 0.5s ease-out, z-index 0.5s ease-out, top 0.5s 0.35s ease-out;}
+#main section.main-visual1 > div.title > h2 {margin-bottom: 20px;}
+#main section.main-visual1 > div.title > h2 img {background-image: url(../img/img4.svg) center center no-repeat; width: 100%; }
+#main section.main-visual1 > div.title > h3 {margin-bottom: 25px;}
+#main section.main-visual1 > div.title > h3 img {background-image: url(../img/img5.svg) center center no-repeat; width: 100%;}
+#main section.main-visual1 > div.title div.new {position: relative; height: 45px; }
+#main section.main-visual1 > div.title div.new a {background-color: transparent; border: 1px solid #ffffff; border-radius: 5px; font-size: 15px; color: #fff; font-weight: 400; padding: 14px 95px; position: relative; display: inline-flex; justify-content: center;}
+  #main section.main-visual1 > div.title div.new a::after {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #000; opacity: .2; z-index: -1; box-sizing: border-box;}
+
+
+#main section.main-visual1 span.material-icons > a {display: inline-block; bottom: 30px; right: 30px; color: #fff; border: 10px solid #222; width: 24px; height: 22px; z-index: 99999;
+  border-radius: 30px; background-color: #222;  position: fixed; font-size: 25px; text-align: center;}
+
+#main section.main-visual2 {height: 100vh;  width: 100vw; position: relative;  top: 0;  object-fit: cover; }
+#main section.main-visual2 div.img2 {min-height: 300px; width: 100%;}
+#main section.main-visual2 div.img2 > img {height: 100%; width: 100%;}
+#main section.main-visual2 > div.title {position: absolute; bottom: 80px; margin: 0; padding: 0; text-align: center; left: 50%; transform: translate(-50%, 15%); will-change: opacity, z-index, top; opacity: 1; z-index: 9; transition: opacity 0.5s ease-out, z-index 0.5s ease-out, top 0.5s 0.35s ease-out;}
+#main section.main-visual2 > div.title > h2 {margin-bottom: 20px; z-index: 9999;}
+#main section.main-visual2 > div.title > h2 img {background-image: url(../img/img4.svg) center center no-repeat; width: 100%; }
+#main section.main-visual2 > div.title a { height: 45px; width: 250px; border: 1px solid #333333; border-radius: 5px; position: relative;
+  font-size: 16px; color: #333333; font-weight: 340; padding: 10px 85px;}
+
+
+
+
+
+
+
+#main section.main-visual3 {height: 100vh; width: 100vw;  position: relative;  top: 0; background: url(../img/main3.jpg) center center no-repeat; background-size: cover; object-fit: cover; }
+#main section.main-visual3 > div.title {position: absolute; bottom: 80px; margin: 0; padding: 0; text-align: center; left: 50%; transform: translate(-50%, 15%); will-change: opacity, z-index, top; opacity: 1; z-index: 9; transition: opacity 0.5s ease-out, z-index 0.5s ease-out, top 0.5s 0.35s ease-out;}
+#main section.main-visual3 > div.title > h2 {margin-bottom: 20px;}
+#main section.main-visual3 > div.title > h2 img {background-image: url(../img/img4.svg) center center no-repeat; width: 100%;}
+#main section.main-visual3 > div.title > h3 {margin-bottom: 30px;}
+#main section.main-visual3 > div.title > h3 img {background-image: url(../img/img5.svg) center center no-repeat; width: 60%;}
+#main section.main-visual3> div.title div.new {position: relative; height: 45px; }
+#main section.main-visual3 > div.title a {background-color: transparent; height: 45px; width: 250px; border: 1px solid #ffffff; border-radius: 5px; position: relative; font-size: 16px; color: #fff; font-weight: 340; padding: 10px 85px; }
+#main section.main-visual3 > div.title div.new a::after {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #000; opacity: .2; z-index: -1; box-sizing: border-box;}
+
+
+
+
+
+
+#footer { padding: 50px 0 30px; background: #fff; position: relative;}
+#footer div.div-box { text-align: center; color: #535353; font-size: 10px; font-weight: normal; line-height: 18px;}
+#footer div.div-box ul.footer-nav {position: absolute; width: 620px; text-align: center; }
+
+#footer div.div-box ul.footer-nav li { width: 100%; height: auto; display: inline;}
+#footer div.div-box p.service {margin: 20px 0;}
+#footer div.div-box a {border-bottom: 1px solid #535353;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sub page */
+
+/* sub header */
+body.sub-gift {background-color: rgb(250, 250, 250);}
+body.sub-gift #header {position: relative; width: 100%; top: 0; height: 90px; ;z-index: 10000;  color: #222;}
+body.sub-gift #header h1 { position: absolute; top: 25px; left: 50%; margin-left: -100px; height: 34px; width: 200px;}
+body.sub-gift #header h1 a {font-size: 1.2em;}
+#header nav.gnb div.mobile_menu {display: none;}
+#header nav.gnb div.mobile_menu ul.gnb-left_bottom select.mobile {display: none;}
+body.sub-gift #header nav.gnb ul.gnb-right select.Shop {top: 0; border:0; box-sizing: border-box; background:transparent;  -webkit-appearance: none; -moz-appearance: none; appearance: none;
+  transform: translate(0, -20%); outline: none; }
+
+body.sub-gift #header nav.gnb ul.gnb-left {position: absolute; top: 40px; transform: translate(0, -50%); margin: 10px 70px; }
+body.sub-gift #header nav.gnb ul.gnb-left li { padding-right: 15px; background-color: transparent; font-size: 13.5px;}
+body.sub-gift #header nav.gnb ul.gnb-left li > a {padding-right: 9px; font-weight: 350;}
+body.sub-gift #header nav.gnb ul.gnb-right {position: absolute; top: 50px; transform: translate(0, -30%); right: 0; margin-right: 60px; }
+body.sub-gift #header nav.gnb ul.gnb-right li { float: right; margin-left: 23px; background-color: transparent; text-align: center; font-size: 15px;}
+body.sub-gift #header nav.gnb ul.gnb-right select.Shop {top: 0; border:0; box-sizing: border-box; background:transparent; color: #000000; top: auto; -webkit-appearance: none; -moz-appearance: none; appearance: none;
+transform: translate(0, -20%); outline: none;}
+body.sub-gift #header nav.gnb ul.gnb-left li:nth-child(2) {color: red;}
+
+/*div event */
+body.sub-gift #header div.event {position: absolute; width: 100%; height: 40px;top: 90px; background-color: #000000; text-align: center; margin: 0 auto; }
+body.sub-gift #header div.event > a > p {display: block; color: #ffffff; top: -50%; transform: translate(0, 100%); font-size: 11px; padding-left: 8px; }
+
+/* main */
+#main-sub section.sub-nav { position: relative; z-index: 5; padding: 100px 0; }
+#main-sub section.sub-nav > ul {position: absolute;  width: 100%; top: 50px; text-align: center !important;}
+#main-sub section.sub-nav > ul > li { width: 80px; height: 80px; display: inline-block; color: #000000; font-size: 12px; }
+#main-sub section.sub-nav > ul > li + li {margin-left: 10px;}
+#main-sub section.sub-nav > ul > li > a {display: block;}
+
+
+#main-sub section.sub-nav > ul > li > a > img { margin-bottom: 20px; width: 100%; height: 100%; padding: 4px; box-sizing: border-box;  }
+#main-sub section.sub-nav > ul > li > a:hover > img {border: 1px solid #000; border-radius: 55px; transition: 0.3s;  }
+
+
+
+#main-sub > div.recommend  { position: relative; width: 100%; height: 60px; margin: 25px 0; }
+#main-sub > div.recommend > ul {position: relative; width: 100%; height: 100%; }
+#main-sub > div.recommend > ul > li {position: absolute; width: auto; left: 20px; top: 50%; transform: translate(0, -50%);
+font-size: 17px; font-weight: 600;}
+#main-sub > div.recommend ul button.btn {background: url(../img/small.svg) right center no-repeat; width: 26px; height: 16px; background-size: cover;
+position: absolute; right: 40px; top: 50%; transform: translate(0, -50%);margin-right: 20px; border: none; cursor: pointer;} 
+#main-sub > div.recommend ul button.btn > p {position: absolute; font-size: 11px; font-weight: 600; display: inline; right: -20px; top: 50%;
+  transform: translate(70%, -50%);}
+
+
+#main-sub > section.gift > div.give { text-align: center;}
+#main-sub > section.gift > div.give > h3 {font-size: 24px; font-weight: bold;}
+#main-sub > section.gift > div.give > p {font-size: 14px; font-weight: 400; padding-top: 15px; line-height: 1.5 ;}
+#main-sub > section.gift > span > a {display: inline-block; bottom: 30px; right: 30px; color: #fff;  border: 10px solid #222; width: 24px; height: 22px;
+  border-radius: 30px; background-color: #222;  position: fixed; font-size: 25px; text-align: center; z-index: 99999;}
+#main-sub > section.gift > ul {background-color: rgb(250, 250, 250); position: relative;  width: 100%; margin-bottom: 200px; overflow: hidden; display: flex; flex-wrap: wrap; justify-content: center;}
+#main-sub > section.gift > ul  li {display: inline-block;  width: 360px; text-align: center; vertical-align: top;  margin-left: 21px;}
+#main-sub > section.gift > ul > li > a {}
+#main-sub > section.gift > ul > li > a > img {display: block; width: 100%; height: auto;}
+#main-sub > section.gift > ul > li > a > p {line-height: 2; font-weight: normal; font-size: 14px; margin-top: 25px; }
+#main-sub > section.gift > ul > li > a > p > em {font-size: 24px;line-height: 1.5; font-weight: bold !important;}
+
+/* 메인 하단 */  
+
+#main-sub section.service-center {position: relative;  border: 1px solid #e0e0e0; text-align: center; margin-top: 130px;
+  border-left: none; border-right: none;}
+#main-sub section.service-center div.service-box {position: relative; padding: 60px 0 60px 0; line-height: 1.8; height: 180px;}
+#main-sub section.service-center div.service-box ul.recommend { width: 100px; display: inline-block; vertical-align: top; margin-right: 183px;}
+
+#main-sub section.service-center div.service-box ul.recommend > li > em {font-size: 16px; font-weight: 600; }
+#main-sub section.service-center div.service-box ul.recommend a {line-height: 1.8; font-size: 14px; font-weight: 500;}
+
+#main-sub section.service-center div.service-box ul.customer { width: 100px; display: inline-block; vertical-align: top;}
+#main-sub section.service-center div.service-box ul.customer > li > em {font-size: 16px; font-weight: 600;}
+#main-sub section.service-center div.service-box ul.customer a {line-height: 1.8; font-size: 14px; font-weight: 500;}
+
+#main-sub section.service-center div.service-box ul.social { width: 100px;display: inline-block; vertical-align: top; margin-left: 183px;}
+#main-sub section.service-center div.service-box ul.social > li > em {font-size: 16px; font-weight: 600;}
+#main-sub section.service-center div.service-box ul.social a {line-height: 1.8; font-size: 14px; font-weight: 500;}
+
+#main-sub section.service-center div.service-box ul.social li:nth-child(3) {color: #b39a7c;}
+#main-sub section.service-center div.service-box ul.social li:nth-child(3):hover span {display: none;} 
+#main-sub section.service-center div.service-box ul.social li:nth-child(3):hover::before {content: '카카오톡 플러스 친구 추가하고 3,000원 혜택 받기'; font-size: 13px; cursor: pointer; }
+
+
+/* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body pick page */
+
+body.pick {background-color: #ffffff}
+body.pick #header {position: relative; width: 100%; top: 0; height: 90px; ;z-index: 10000;  color: #222;}
+body.pick #header h1 {position: absolute; top: 25px; left: 50%; margin-left: -100px; height: 34px; width: 200px;}
+body.pick #header h1 a {font-size: 1.2em;}
+
+body.pick #header nav.gnb ul.gnb-right select.Shop {top: 0; border:0; box-sizing: border-box; background:transparent;  -webkit-appearance: none; -moz-appearance: none; appearance: none;
+  transform: translate(0, -20%); outline: none; }
+
+body.pick #header nav.gnb ul.gnb-left {position: absolute; top: 40px; transform: translate(0, -50%); margin: 10px 70px;}
+body.pick #header nav.gnb ul.gnb-left li { padding-right: 15px; background-color: transparent; font-size: 13.5px;}
+body.pick #header nav.gnb ul.gnb-left li > a {padding-right: 9px; font-weight: 350;}
+body.pick #header nav.gnb ul.gnb-right {position: absolute; top: 50px; transform: translate(0, -30%); right: 0;margin-right: 60px; }
+body.pick #header nav.gnb ul.gnb-right li { float: right; margin-left: 23px; background-color: transparent; text-align: center; font-size: 15px;}
+body.pick #header nav.gnb ul.gnb-right select.Shop {top: 0; border:0; box-sizing: border-box; background:transparent; color: #000; top: auto; -webkit-appearance: none; -moz-appearance: none; appearance: none;
+transform: translate(0, -20%); outline: none;}
+body.pick #header span.material-icons > a {display: inline-block; bottom: 30px; right: 30px; color: #fff; border: 10px solid #222; width: 24px; height: 22px; z-index: 99999;
+  border-radius: 30px; background-color: #222;  position: fixed; font-size: 25px; text-align: center;}
+
+/*div event */
+body.pick #header div.event {position: absolute ;width: 100%; height: 40px;top: 90px; background-color: #000000; text-align: center; margin: 0 auto; }
+body.pick #header div.event > a > p {display: block; color: #ffffff; top: -50%; transform: translate(0, 100%); font-size: 11px; padding-left: 8px; }
+
+
+/* main */
+body.pick div.mainpick { position: relative;  padding: 0 25px; max-width: 100vw;  box-sizing: border-box; overflow: hidden; }
+body.pick div.mainpick section.p-one {width: 1630px; height: 980px; }
+
+body.pick div.mainpick div.imgbox {position: relative; width: 63px; height: auto; margin-left: 200px; text-align: center; }
+body.pick div.mainpick div.imgbox img {position: absolute; max-width: 500px; height: auto; overflow: hidden; top: 0; margin-left: 10px;}
+body.pick div.mainpick div.imgbox > img:nth-child(1) {z-index: 3;}
+body.pick div.mainpick section.p-one div.one-text {width: 363px; height: auto; display: block; position: absolute; top: 45px; right: 30px; margin: 80px 100px; color: #000000;}
+body.pick div.mainpick section.p-one div.one-text > div.explanation {}
+body.pick div.mainpick section.p-one div.one-text > div.explanation > div.title-text { padding-bottom: 10px; }
+body.pick div.mainpick section.p-one div.one-text > div.explanation > div.title-text > em {font-family: 'gothic-a1', sans-serif !important; letter-spacing: -0.5px;
+  font-size: 23px;font-weight: 350; padding-right: 100px; padding-bottom: 10px;}
+body.pick div.mainpick section.p-one div.one-text > div.explanation > div.ml-text {font-size: 12px; padding-bottom: 15px; text-align: left; }
+body.pick div.mainpick section.p-one div.one-text > div.explanation > div.in-text {font-size: 15px; font-weight: normal; line-height: 25px; padding-bottom: 10px;}
+body.pick div.mainpick section.p-one div.one-text > div.explanation > div.in-text > em { font-weight: 600;}
+body.pick div.mainpick section.p-one div.one-text > div.explanation > div.in-text2 {font-size: 15px; font-weight: normal; line-height: 25px; padding-bottom: 30px;}
+body.pick div.mainpick section.p-one div.one-text > div.explanation > div.in-text2 > em { font-weight: 600;}
+ 
+body.pick div.mainpick section.p-one div.one-text > div.basket > div.btn {position: relative; background-color: #b39a7c; width: 363px; height: 58px;}
+body.pick div.mainpick section.p-one div.one-text > div.basket > div.btn > a {position: absolute; left: 50%;transform: translate(-50%, 0);bottom: 20px; color: #ffffff;
+font-size: 13px; font-weight: 600;}
+body.pick div.mainpick section.p-one div.one-text > div.basket > p:nth-child(2) {color: #b39a7c; padding: 30px 0; font-size: 12px; font-weight: 800; line-height: 21px;} 
+
+
+body.pick div.mainpick section.p-one div.one-text div.big-infobox > div.info-box1 { padding: 20px; position: relative; border-top: 1px solid #efefef; cursor: pointer;}
+body.pick div.mainpick section.p-one div.one-text div.big-infobox > div.info-box2 { padding: 20px; position: relative; border-top: 1px solid #efefef; cursor: pointer;}
+body.pick div.mainpick section.p-one div.one-text div.big-infobox > div.info-box3 { padding: 20px; position: relative; border-top: 1px solid #efefef; border-bottom: 1px solid #efefef; cursor: pointer;}
+body.pick div.mainpick section.p-one div.one-text div.big-infobox dl { display: none; padding-top: 20px;}
+
+body.pick div.mainpick section.p-one div.one-text div.big-infobox h4 {cursor: pointer; display: block;}
+body.pick div.mainpick section.p-one div.one-text div.big-infobox h4 img {width: 25px; float: right; cursor: pointer;}
+body.pick div.mainpick section.p-one div.one-text div.big-infobox .rotate {width: 25px; float: right; -moz-transition: all .5s linear; -webkit-transition: all .3s linear; transition: all .3s linear;}
+body.pick div.mainpick section.p-one div.one-text div.big-infobox .rotate.down {-moz-transform: rotate(3.142rad); -webkit-transform: rotate(3.142rad); transform: rotate(3.142rad); }
+
+
+/* 여쭈어봐야할.. */
+
+body.pick div.mainpick section.p-one div.one-text div.info-box dt {padding: 20px; font-size: 16px; font-weight: 600; position: relative;  }
+body.pick div.mainpick section.p-one div.one-text dd {display: block; font-size: 16px; font-weight: normal; line-height: 1.8; position: relative; padding: 30px 0;}
+body.pick div.mainpick section.p-one div.one-text div.info-box2 dd > strong {font-weight: 500;  text-align: left; line-height: 1.5; left: 0; position: absolute; ; }
+body.pick div.mainpick section.p-one div.one-text div.info-box3 dd span.color-red { color: red; display: block; padding: 20px 0;}
+
+
+body.pick div.mainpick section.p-two {position: relative; padding-bottom: 200px; display: block;width: 1047px;}
+body.pick div.mainpick section.p-two > img {width: 1055; height: 1270px;}
+
+
+
+
+section.p-three > div.plus { text-align: center; padding: 50px 0;}
+section.p-three > div.plus > h4 {font-size: 22px; font-weight: 350; color: #000000; font-family: inherit;}
+section.p-three > div.plus > h4 > em {font-size: 24px; font-weight: 400; }
+section.p-three > span > a {display: inline-block; bottom: 30px; right: 30px; color: #fff;  border: 10px solid #222; width: 24px; height: 22px;
+  border-radius: 30px; background-color: #222;  position: fixed; font-size: 25px; text-align: center; z-index: 99999;}
+section.p-three > ul {background-color: #ffffff; position: relative;  width: 100%; margin-bottom: 200px; overflow: hidden; }
+section.p-three > ul > li {display: inline-block;  width: 365px; text-align: center; vertical-align: top;
+  padding: 0 39px 0 0;}
+section.p-three > ul > li > a {}
+section.p-three > ul > li > a > img {display: block; width: 100%; height: auto;}
+section.p-three > ul > li > a > p {line-height: 2; font-weight: normal; font-size: 14px; margin-top: 25px; }
+section.p-three > ul > li > a > p > em {font-size: 24px;line-height: 1.5; font-weight: bold !important;}
+
+
+ section.service-center {position: relative;  border: 1px solid #e0e0e0; text-align: center; margin-top: 130px;
+  border-left: none; border-right: none;}
+ section.service-center div.service-box {position: relative; padding: 60px 0 60px 0; line-height: 1.8; height: 180px;}
+ section.service-center div.service-box ul.recommend { width: 100px; display: inline-block; vertical-align: top; margin-right: 183px;}
+
+ section.service-center div.service-box ul.recommend > li > em {font-size: 16px; font-weight: 600; }
+ section.service-center div.service-box ul.recommend a {line-height: 1.8; font-size: 14px; font-weight: 500;}
+
+ section.service-center div.service-box ul.customer { width: 100px; display: inline-block; vertical-align: top;}
+ section.service-center div.service-box ul.customer > li > em {font-size: 16px; font-weight: 600;}
+ section.service-center div.service-box ul.customer a {line-height: 1.8; font-size: 14px; font-weight: 500;}
+
+ section.service-center div.service-box ul.social { width: 100px;display: inline-block; vertical-align: top; margin-left: 183px;}
+ section.service-center div.service-box ul.social > li > em {font-size: 16px; font-weight: 600;}
+ section.service-center div.service-box ul.social a {line-height: 1.8; font-size: 14px; font-weight: 500;}
+
+ section.service-center div.service-box ul.social li:nth-child(3) {color: #b39a7c;}
+ section.service-center div.service-box ul.social li:nth-child(3):hover span {display: none;} 
+ section.service-center div.service-box ul.social li:nth-child(3):hover::before {content: '카카오톡 플러스 친구 추가하고 3,000원 혜택 받기'; font-size: 13px; cursor: pointer; }
+
+
+
+
+
+
+
+/* module */
+#footer { padding: 50px 0 30px; background: #fff;}
+#footer div.div-box { text-align: center; color: #535353; font-size: 10px; width: auto; font-weight: normal; line-height: 18px; margin: 25px 0 ;}
+#footer div.div-box ul.footer-nav {padding-bottom: 20px; text-align: center; width: 620px; left: 50%; top: 0; transform: translate(-50%, 0); margin: 20px 0; }
+#footer div.div-box ul.footer-nav li { width: 100%; height: auto;  display: inline; font-size: 10px; color: #535353;}
+#footer div.div-box ul.footer-nav li address {display: inline;}
+#footer div.div-box p.service {}
+#footer div.div-box a {border-bottom: 1px solid #535353;}
+#footer div.div-box > ul.footer-nav > p > a:first-child {border: none;}
+#footer div.div-box > p {font-weight: 450; font-size: 11px;}
+
